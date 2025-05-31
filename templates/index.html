@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Static Files in Flask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Image Files in Flask!</h1>
+    <img src="{{ url_for('static', filename='b1_2.jpg') }}" alt="Example Image">
+</body>
+</html>

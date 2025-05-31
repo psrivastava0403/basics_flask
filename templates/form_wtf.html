@@ -1,0 +1,11 @@
+<form method="POST">
+    {{ form.hidden_tag() }}
+    {{ form.username.label }} {{ form.username(size=30) }}
+    {{ form.submit() }}
+    
+    {% for field, errors in form.errors.items() %}
+        {% for error in errors %}
+            <p style="color: red;">{{ error }}</p>
+        {% endfor %}
+    {% endfor %}
+</form>
